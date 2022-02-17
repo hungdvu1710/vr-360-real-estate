@@ -14,6 +14,7 @@ h5,
 h6,
 button {
   font-family: Roboto;
+  text-align: center;
 }
 
 .app {
@@ -24,10 +25,10 @@ button {
 .app__header {
   height: 3rem;
   width: 100%;
-  background-color: #292929;
+  background-color: transparent;
   padding: 1rem;
   box-sizing: border-box;
-  color: white;
+  color: black;
 
   display: flex;
   justify-content: space-between;
