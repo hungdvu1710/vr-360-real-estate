@@ -1,0 +1,44 @@
+.menu {
+  color: white;
+  height: 100vh;
+  width: 20rem;
+  background-color: #292929;
+  z-index: 200;
+
+  transform: translateX(-100%);
+  transition: 0.3s;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+}
+
+.menu-open {
+  transform: translateX(0%);
+}
+
+.menu__item {
+  border-bottom: 1px solid #ddd;
+}
+
+.menu__item {
+  display: block;
+  padding: .7rem 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  color: inherit;
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.menu__item:focus {
+  text-decoration: none;
+}
+
+.menu__item:visited {
+  color: inherit;
+}

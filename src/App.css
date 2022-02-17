@@ -1,8 +1,45 @@
-.App {
-  height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: rgb(233, 233, 233);
 }
 
-#pano {
-  width:100%;
-  height:100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: Roboto;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app__header {
+  height: 3rem;
+  width: 100%;
+  background-color: #292929;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__menu-btn {
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.app__nav {
+  display: flex;
+  gap: 1rem;
 }
