@@ -1,5 +1,6 @@
 import './Menu.css'
 import { useState } from 'react';
+import MenuItem from './MenuItem';
 
 export const Menu = (props) => {
   const [activeMenuSection, setActiveMenuSection] = useState(-1);
@@ -16,10 +17,8 @@ export const Menu = (props) => {
         Group 1
       </button>
       <div className={`menu__item-group ${activeMenuSection === 0 ? "" : "inactive"}`}>
-        {props.items.map((i) => (
-          <div className="menu__item" key={i}>
-            Menu item {i}
-          </div>
+        {props.items.map((item) => (
+          <MenuItem item={item} />
         ))}
       </div>
       <button onClick={() => handleMenuExpansion(1)} className={`menu__expand-btn ${activeMenuSection === 1 ? "active" : ""}`}>
