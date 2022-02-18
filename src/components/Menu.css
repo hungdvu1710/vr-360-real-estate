@@ -32,7 +32,7 @@
 .menu__item:hover {
   color: inherit;
   text-decoration: none;
-  background-color: #eee;
+  background-color: grey;
 }
 
 .menu__item:focus {
@@ -41,4 +41,42 @@
 
 .menu__item:visited {
   color: inherit;
+}
+
+.menu__expand-btn {
+  padding: 0.7rem 15px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #292929;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active, .menu__expand-btn:hover {
+  background-color: #555;
+}
+
+.menu__expand-btn:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.menu__expand-btn.active:after {
+  content: "\2212";
+}
+
+.menu__item-group {
+  padding: 0 18px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.menu__item-group.inactive {
+  max-height: 0;
 }
