@@ -1,24 +1,25 @@
 .menu-item {
-    border-bottom: 1px solid #ddd;
-  }
+  border-bottom: 1px solid #ddd;
+}
   
 .menu-item {
-display: block;
-padding: .7rem 15px;
-color: inherit;
-text-decoration: none;
+  display: block;
+  padding: .7rem 15px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .menu-item:hover {
-color: inherit;
-text-decoration: none;
-background-color: grey;
+  color: inherit;
+  text-decoration: none;
+  background-color: grey;
+  cursor: pointer;
 }
 
 .menu-item:focus {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .menu-item:visited {
-color: inherit;
+  color: inherit;
 }

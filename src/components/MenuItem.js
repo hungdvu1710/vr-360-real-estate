@@ -2,7 +2,7 @@ import "./MenuItem.css";
 
 const MenuItem = (props) => {
   return (
-    <div className="menu-item" key={props.item}>
+    <div className="menu-item">
       Menu item {props.item}
     </div>
   );

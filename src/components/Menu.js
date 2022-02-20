@@ -1,29 +1,20 @@
 import './Menu.css'
 import { useState } from 'react';
-import MenuItem from './MenuItem';
+import MenuSection from './MenuSection';
 
 export const Menu = (props) => {
-  const [activeMenuSection, setActiveMenuSection] = useState(-1);
-  const handleMenuExpansion = (index) => {
-    setActiveMenuSection((prevState) => {
-      return prevState === index ? -1 : index
-    });
-  }
+  // const [activeMenuSection, setActiveMenuSection] = useState(-1);
+  // const handleMenuExpansion = (index) => {
+  //   setActiveMenuSection((prevState) => {
+  //     return prevState === index ? -1 : index
+  //   });
+  // }
 
   return (
     <div className={`menu ${props.isMenuOpen ? "menu-open" : ""}`}>
       <h2>Menu</h2>
-      <button key={0} onClick={() => handleMenuExpansion(0)} className={`menu__expand-btn ${activeMenuSection === 0 ? "active" : ""}`}>
-        Group 1
-      </button>
-      <div className={`menu__item-group ${activeMenuSection === 0 ? "" : "inactive"}`}>
-        {props.items.map((item) => (
-          <MenuItem item={item} />
-        ))}
-      </div>
-      <button onClick={() => handleMenuExpansion(1)} className={`menu__expand-btn ${activeMenuSection === 1 ? "active" : ""}`}>
-        Group 2
-      </button>
+      <MenuSection items={props.items} name={'Group 1'} key={1} />
+      <MenuSection items={[6,7,8]} name={'Group 2'} key={2} />
     </div>
   );
 };
