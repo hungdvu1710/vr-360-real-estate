@@ -22,7 +22,7 @@ const App = () => {
         <div className="app__header">
           <AiOutlineMenu className="app__menu-btn" onClick={handleMenu} />
           <h1>Example App</h1>
-          <div className="nav"></div>
+          <div className="app__nav"></div>
         </div>
       </div>
       <Menu isMenuOpen={isMenuOpen} items={menuItems} />
