@@ -1,0 +1,300 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	
+	<scene name="scene_11_giua_ho_nuoc_xu_ly_8k" title="11 giua ho nuoc xu ly_8k" onstart="" thumburl="panos/11_giua_ho_nuoc_xu_ly_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/11_giua_ho_nuoc_xu_ly_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/11_giua_ho_nuoc_xu_ly_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="82.634" atv="11.887" linkedscene="scene_nha_may_xu_ly_nuoc_thai_5_8k" />
+
+	</scene>
+
+	<scene name="scene_15_trung_tam_2_8k" title="15 trung tam 2_8k" onstart="" thumburl="panos/15_trung_tam_2_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/15_trung_tam_2_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/15_trung_tam_2_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_16_du_an_2_trung_tam_8k" title="16 du an 2 trung tam_8k" onstart="" thumburl="panos/16_du_an_2_trung_tam_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/16_du_an_2_trung_tam_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/16_du_an_2_trung_tam_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_18_du_an_2_dau_8k_equi" title="18 du an 2 dau_8k_equi" onstart="" thumburl="panos/18_du_an_2_dau_8k_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="339.129" vlookat="20.879" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/18_du_an_2_dau_8k_equi.tiles/preview.jpg" />
+
+		<image prealign="0|196.0|0">
+			<cube url="panos/18_du_an_2_dau_8k_equi.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-82.918" atv="15.408" linkedscene="scene_3_nha_dieu_hanh_8k" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="105.669" atv="27.048" linkedscene="scene_8_nha_may_xu_ly_nuoc_thai_8k" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="18.180" atv="19.757" linkedscene="scene_16_du_an_2_trung_tam_8k" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="147.896" atv="10.167" linkedscene="scene_15_trung_tam_2_8k" />
+
+	</scene>
+
+	<scene name="scene_3_nha_dieu_hanh_8k" title="3 nha dieu hanh_8k" onstart="" thumburl="panos/3_nha_dieu_hanh_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/3_nha_dieu_hanh_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/3_nha_dieu_hanh_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="35.902" atv="20.893" linkedscene="scene_4_vuon_ky_vat_8k" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-63.037" atv="18.380" linkedscene="scene_5_khu_hau_can_8k" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-48.894" atv="29.426" linkedscene="scene_dieu_hanh_11_8k" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-4.012" atv="43.010" linkedscene="scene_dieu_hanh_1_8k" />
+
+	</scene>
+
+	<scene name="scene_4_vuon_ky_vat_8k" title="4 vuon ky vat_8k" onstart="" thumburl="panos/4_vuon_ky_vat_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/4_vuon_ky_vat_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/4_vuon_ky_vat_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="175.050" atv="77.961" linkedscene="scene_den_ky_vat_2_8k" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="0.047" atv="46.927" linkedscene="scene_den_ky_vat_6_8k" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="31.234" atv="50.404" linkedscene="scene_den_ky_vat_5_8k" />
+
+	</scene>
+
+	<scene name="scene_5_khu_hau_can_8k" title="5 khu hau can_8k" onstart="" thumburl="panos/5_khu_hau_can_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/5_khu_hau_can_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/5_khu_hau_can_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_8_nha_may_xu_ly_nuoc_thai_8k" title="8 nha may xu ly nuoc thai_8k" onstart="" thumburl="panos/8_nha_may_xu_ly_nuoc_thai_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/8_nha_may_xu_ly_nuoc_thai_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/8_nha_may_xu_ly_nuoc_thai_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.892" atv="32.593" linkedscene="scene_nha_may_xu_ly_nuoc_thai_5_8k" />
+
+	</scene>
+
+	<scene name="scene_den_ky_vat_2_8k" title="den ky vat 2_8k" onstart="" thumburl="panos/den_ky_vat_2_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/den_ky_vat_2_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/den_ky_vat_2_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_den_ky_vat_5_8k" title="den ky vat 5_8k" onstart="" thumburl="panos/den_ky_vat_5_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/den_ky_vat_5_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/den_ky_vat_5_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_den_ky_vat_6_8k" title="den ky vat 6_8k" onstart="" thumburl="panos/den_ky_vat_6_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/den_ky_vat_6_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/den_ky_vat_6_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.334" atv="-0.703" linkedscene="scene_den_ky_vat_7_8k" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="51.419" atv="4.706" linkedscene="scene_dieu_hanh_11_8k" />
+
+	</scene>
+
+	<scene name="scene_den_ky_vat_7_8k" title="den ky vat 7_8k" onstart="" thumburl="panos/den_ky_vat_7_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/den_ky_vat_7_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/den_ky_vat_7_8k.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,1024,1792,3584,7168" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_dieu_hanh_11_8k" title="dieu hanh 11_8k" onstart="" thumburl="panos/dieu_hanh_11_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/dieu_hanh_11_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/dieu_hanh_11_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_dieu_hanh_1_8k" title="dieu hanh 1_8k" onstart="" thumburl="panos/dieu_hanh_1_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/dieu_hanh_1_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/dieu_hanh_1_8k.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_nha_may_xu_ly_nuoc_thai_5_8k" title="nha may xu ly nuoc thai 5_8k" onstart="" thumburl="panos/nha_may_xu_ly_nuoc_thai_5_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/nha_may_xu_ly_nuoc_thai_5_8k.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/nha_may_xu_ly_nuoc_thai_5_8k.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,1024,1792,3584,7168" />
+		</image>
+
+	</scene>
+
+
+</krpano>
