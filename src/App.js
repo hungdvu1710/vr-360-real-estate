@@ -7,14 +7,36 @@ import { ReactDimmer } from "react-dimmer";
 const App = () => {
   const script = document.createElement("script");
   script.innerHTML = `embedpano({xml:"tour.xml", target:"pano", html5:"only", mobilescale:1.0, passQueryParameters:"startscene,startlookat"});`;
+  // Execute useEffect only once on start app
   useEffect(() => {
     document.getElementById("pano").appendChild(script);
-  });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [menuItems, setMenuItems] = useState([]);
   const [isMenuOpen, setMenuOpen] = useState(false);
-  
+
+  const sceneList = [
+    "scene_den_ky_vat_2_8k",
+    "scene_den_ky_vat_5_8k",
+    "scene_den_ky_vat_6_8k",
+    "scene_den_ky_vat_7_8k",
+    "scene_dieu_hanh_11_8k",
+    "scene_dieu_hanh_1_8k",
+    "scene_nha_may_xu_ly_nuoc_thai_5_8k",
+    "scene_3_nha_dieu_hanh_8k",
+    "scene_4_vuon_ky_vat_8k",
+    "scene_5_khu_hau_can_8k",
+    "scene_8_nha_may_xu_ly_nuoc_thai_8k",
+    "scene_11_giua_ho_nuoc_xu_ly_8k",
+    "scene_15_trung_tam_2_8k",
+    "scene_16_du_an_2_trung_tam_8k",
+    "scene_18_du_an_2_dau_8k_equi"
+  ]
 
   const handleMenu = () => {
+    // const krpano = document.getElementById("krpanoSWFObject");
+    // krpano loadscene syntax:
+    // krpano.call("loadscene(" + "scene_15_trung_tam_2_8k" + ",null,MERGE,OPENBLEND(1.0, -0.5, 0.3, 0.8, linear))");
     setMenuOpen((prevState) => !prevState);
     setMenuItems((prevItems) => {
       return [1, 2, 3, 4, 5];
@@ -31,7 +53,7 @@ const App = () => {
         </div>
         <div id="pano"></div>
       </div>
-      <Menu isMenuOpen={isMenuOpen} items={menuItems} />
+      <Menu isMenuOpen={isMenuOpen} items={sceneList} />
       <ReactDimmer
         isOpen={isMenuOpen}
         exitDimmer={setMenuOpen}

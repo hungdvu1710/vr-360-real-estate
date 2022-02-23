@@ -18,7 +18,7 @@
 	               littleplanetintro="false"
 	               followmousecontrol="false"
 	               title="true"
-	               thumbs="true"
+	               thumbs="false"
 	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
 	               thumbs_opened="false"
 	               thumbs_text="false"
@@ -29,7 +29,7 @@
 	               thumbs_loop="false"
 	               tooltips_buttons="false"
 	               tooltips_thumbs="false"
-	               tooltips_hotspots="false"
+	               tooltips_hotspots="true"
 	               tooltips_mapspots="false"
 	               deeplinking="false"
 	               loadscene_flags="MERGE"
@@ -69,9 +69,26 @@
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
 
-
 	
-	<scene name="scene_11_giua_ho_nuoc_xu_ly_8k" title="11 giua ho nuoc xu ly_8k" onstart="" thumburl="panos/11_giua_ho_nuoc_xu_ly_8k.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_18_du_an_2_dau_8k_equi" title="18 du an 2 dau_8k_equi" onstart="" thumburl="panos/18_du_an_2_dau_8k_equi.tiles/thumb.jpg" lat="" lng="" heading="" >
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="339.129" vlookat="20.879" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/18_du_an_2_dau_8k_equi.tiles/preview.jpg" />
+
+		<image prealign="0|196.0|0">
+			<cube url="panos/18_du_an_2_dau_8k_equi.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-82.918" atv="15.408" linkedscene="scene_3_nha_dieu_hanh_8k" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="105.669" atv="27.048" linkedscene="scene_8_nha_may_xu_ly_nuoc_thai_8k" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="18.180" atv="19.757" linkedscene="scene_16_du_an_2_trung_tam_8k" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="147.896" atv="10.167" linkedscene="scene_15_trung_tam_2_8k" />
+		
+	</scene>
+
+	<scene name="scene_11_giua_ho_nuoc_xu_ly_8k" title="11 giua ho nuoc xu ly_8k" onstart="" thumburl="panos/11_giua_ho_nuoc_xu_ly_8k.tiles/thumb.jpg" lat="" lng="" heading=""  >
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -114,23 +131,6 @@
 
 	</scene>
 
-	<scene name="scene_18_du_an_2_dau_8k_equi" title="18 du an 2 dau_8k_equi" onstart="" thumburl="panos/18_du_an_2_dau_8k_equi.tiles/thumb.jpg" lat="" lng="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="339.129" vlookat="20.879" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/18_du_an_2_dau_8k_equi.tiles/preview.jpg" />
-
-		<image prealign="0|196.0|0">
-			<cube url="panos/18_du_an_2_dau_8k_equi.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2560" />
-		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-82.918" atv="15.408" linkedscene="scene_3_nha_dieu_hanh_8k" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="105.669" atv="27.048" linkedscene="scene_8_nha_may_xu_ly_nuoc_thai_8k" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="18.180" atv="19.757" linkedscene="scene_16_du_an_2_trung_tam_8k" />
-		<hotspot name="spot4" style="skin_hotspotstyle" ath="147.896" atv="10.167" linkedscene="scene_15_trung_tam_2_8k" />
-
-	</scene>
 
 	<scene name="scene_3_nha_dieu_hanh_8k" title="3 nha dieu hanh_8k" onstart="" thumburl="panos/3_nha_dieu_hanh_8k.tiles/thumb.jpg" lat="" lng="" heading="">
 		
@@ -296,5 +296,5 @@
 
 	</scene>
 
-
+	
 </krpano>

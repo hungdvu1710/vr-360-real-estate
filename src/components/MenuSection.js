@@ -6,7 +6,6 @@ const MenuSection = (props) => {
   const [isActive, setActive] = useState(false);
   const handleMenuExpansion = () => {
     setActive(prevState => !prevState);
-    console.log(isActive)
   }
   return (
     <div className="menu-section">
