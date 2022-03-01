@@ -1,8 +1,9 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Menu } from './components/Menu'
+import { Menu } from "./components/Menu";
 import { ReactDimmer } from "react-dimmer";
+import Modal from "./components/Modal";
 
 const App = () => {
   const script = document.createElement("script");
@@ -10,10 +11,10 @@ const App = () => {
   // Execute useEffect only once on start app
   useEffect(() => {
     document.getElementById("pano").appendChild(script);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const [menuItems, setMenuItems] = useState([]);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isModalOpen, setModal] = useState(true);
 
   const sceneList = [
     "scene_den_ky_vat_2_8k",
@@ -30,17 +31,14 @@ const App = () => {
     "scene_11_giua_ho_nuoc_xu_ly_8k",
     "scene_15_trung_tam_2_8k",
     "scene_16_du_an_2_trung_tam_8k",
-    "scene_18_du_an_2_dau_8k_equi"
-  ]
+    "scene_18_du_an_2_dau_8k_equi",
+  ];
 
   const handleMenu = () => {
     // const krpano = document.getElementById("krpanoSWFObject");
     // krpano loadscene syntax:
     // krpano.call("loadscene(" + "scene_15_trung_tam_2_8k" + ",null,MERGE,OPENBLEND(1.0, -0.5, 0.3, 0.8, linear))");
     setMenuOpen((prevState) => !prevState);
-    setMenuItems((prevItems) => {
-      return [1, 2, 3, 4, 5];
-    });
   };
 
   return (
@@ -54,6 +52,14 @@ const App = () => {
         <div id="pano"></div>
       </div>
       <Menu isMenuOpen={isMenuOpen} items={sceneList} />
+      {isModalOpen && <Modal closeModal={setModal} />}
+
+      <ReactDimmer
+        isOpen={isModalOpen}
+        exitDimmer={setModal}
+        zIndex={100}
+        blur={1.5}
+      />
       <ReactDimmer
         isOpen={isMenuOpen}
         exitDimmer={setMenuOpen}
