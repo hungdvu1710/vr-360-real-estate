@@ -49,8 +49,8 @@ const App = () => {
         </div>
         <div id="pano"></div>
       </div>
-      <Menu isMenuOpen={isMenuOpen} items={sceneList} />
-      {isModalOpen && <Modal closeModal={setModal} />}
+      <Menu isMenuOpen={isMenuOpen} items={sceneList} openModal={() => {setModal(true)}} />
+      {isModalOpen && <Modal closeModal={() => {setModal(false)}} />}
 
       <ReactDimmer
         isOpen={isModalOpen}

@@ -7,9 +7,7 @@ const Modal = (props) => {
       <div className="modal__header">
         <AiOutlineClose
           className="modal__close-btn"
-          onClick={() => {
-            props.closeModal(false);
-          }}
+          onClick={props.closeModal}
         />
       </div>
       <div className="modal__body">

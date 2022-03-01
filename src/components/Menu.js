@@ -5,7 +5,10 @@ export const Menu = (props) => {
   return (
     <div className={`menu ${props.isMenuOpen ? "menu-open" : ""}`}>
       <h2>Menu</h2>
-      <MenuSection items={props.items} name={"Group 1"} key={1} />
+      <button onClick={props.openModal} className="menu__modal-trigger-btn">
+        Open Modal
+      </button>
+      <MenuSection items={props.items} name={"Locations"} key={1} />
     </div>
   );
 };

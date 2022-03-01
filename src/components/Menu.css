@@ -17,3 +17,19 @@
 .menu-open {
   transform: translateX(0%);
 }
+
+.menu__modal-trigger-btn {
+  padding: 0.7rem 15px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #16a651;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.menu__modal-trigger-btn:hover {
+  background-color: #555;
+}
