@@ -13,6 +13,7 @@ const App = () => {
     document.getElementById("pano").appendChild(script);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isModalOpen, setModal] = useState(true);
 
@@ -35,9 +36,6 @@ const App = () => {
   ];
 
   const handleMenu = () => {
-    // const krpano = document.getElementById("krpanoSWFObject");
-    // krpano loadscene syntax:
-    // krpano.call("loadscene(" + "scene_15_trung_tam_2_8k" + ",null,MERGE,OPENBLEND(1.0, -0.5, 0.3, 0.8, linear))");
     setMenuOpen((prevState) => !prevState);
   };
 

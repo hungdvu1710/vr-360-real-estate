@@ -1,16 +1,16 @@
 import "./Modal.css";
+import { AiOutlineClose } from "react-icons/ai"; 
 
 const Modal = (props) => {
   return (
     <div className="modal">
       <div className="modal__header">
-        <h2
+        <AiOutlineClose
+          className="modal__close-btn"
           onClick={() => {
             props.closeModal(false);
           }}
-        >
-          X
-        </h2>
+        />
       </div>
       <div className="modal__body">
         <h2>This is a modal</h2>
