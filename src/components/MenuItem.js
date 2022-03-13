@@ -7,8 +7,8 @@ const MenuItem = (props) => {
     krpano.call(`loadscene(${event.target.dataset.scene},null,MERGE,OPENBLEND(1.0, -0.5, 0.3, 0.8, linear))`);
   };
   return (
-    <div className="menu-item" data-scene={props.item} onClick={handleClick}>
-      {props.item}
+    <div className="menu-item" data-scene={props.item.scene} onClick={handleClick}>
+      {props.item.name}
     </div>
   );
 };

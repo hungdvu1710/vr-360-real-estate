@@ -41,6 +41,10 @@ button {
 .app__menu-btn {
   font-size: 1.75rem;
   cursor: pointer;
+  background: url('./menu_open_64.ico');
+  width: 64px;
+  height: 64px;
+  margin-top: 30px;
 }
 
 .app__nav {
