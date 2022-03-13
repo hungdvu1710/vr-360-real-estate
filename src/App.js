@@ -48,7 +48,6 @@ const App = () => {
       <div className="app">
         <div className="app__header">
           <AiOutlineMenu className="app__menu-btn" onClick={handleMenu} />
-          <h2>Nam Cau Kien</h2>
           <div className="app__nav"></div>
         </div>
         <div id="pano"></div>
