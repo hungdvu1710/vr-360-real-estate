@@ -5,3 +5,16 @@
 html, body {
   height: 100%;
 }
+
+p {
+  margin: 0;
+  line-height: 1.35;
+  font-family: helvetica, sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  p {
+    font-size: 0.8em;
+    margin-left: 0.8em;
+  }
+}
